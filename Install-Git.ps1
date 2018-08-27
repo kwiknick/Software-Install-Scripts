@@ -1,3 +1,8 @@
+<#
+    This script was taken from Tom Larse and permission has been requested via email.
+    https://github.com/tomlarse/Install-Git
+#>
+
 function Install-Git {
     param(
     )
