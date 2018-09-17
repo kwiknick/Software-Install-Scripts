@@ -24,11 +24,11 @@
         try {
             Start-Process $outputFile -ArgumentList "/verysilent /norestart /MERGETASKS=!runcode" -wait
         } catch {
-            Write-Warning "Steam install failed when executing: $outputFile /VERYSILENT /MERGETASKS=!runcode"
+            Write-Warning "VSCode install failed when executing: $outputFile /VERYSILENT /MERGETASKS=!runcode"
         }
 
         if (Test-Path "C:\Program Files\Microsoft VS Code\Code.exe") {
-            Write-Output "Steam Successfully installed!!!  Removing installation executable."
+            Write-Output "VSCode Successfully installed!!!  Removing installation executable."
             Remove-Item $outputFile -Force
 
             #Write-Verbose "Adding VSCode to the System level Path Environment Variable."
@@ -44,5 +44,3 @@
     }
 
 }
-
-Install-VSCode
