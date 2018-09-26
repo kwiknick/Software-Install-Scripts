@@ -4,8 +4,7 @@
 #>
 
 function Install-Git {
-    param(
-    )
+    param()
     $gitExePath = "C:\Program Files\Git\bin\git.exe"
 
     #Added TLS negotiation Fork jmangan68
@@ -78,5 +77,3 @@ function Install-Git {
     }
 
 }
-
-Install-Git
